@@ -1,0 +1,41 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    margin-top: 160px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 240px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.loginBox {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in;
+}
+
+.loginBox:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+    .rarr {
+        transform: scale(2);
+    }
+
+}

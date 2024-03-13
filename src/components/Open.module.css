@@ -1,0 +1,35 @@
+.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    margin-top: 160px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 240px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.ctx {
+    padding: 4px;
+    width: 100%;
+    font-size: x-large;
+    transition: all 0.4s ease;
+
+}
+
+.ctx:hover {
+    font-weight: bolder;
+}

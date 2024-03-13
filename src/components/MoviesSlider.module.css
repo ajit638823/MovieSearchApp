@@ -1,0 +1,85 @@
+.slideImg {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+
+
+}
+
+/* .slideImg:hover {} */
+
+.outerDiv {
+    padding: 8px;
+    border-radius: 10px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+.activeTransition {
+    transition: all 0.5s;
+}
+
+.active {
+    filter: blur(2px);
+    transform: scale(1.04);
+
+}
+
+.details {
+    position: absolute;
+    top: 10px;
+    /* background-color: green; */
+    max-width: 400px;
+    max-height: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.9);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+}
+
+.details>button {
+    color: aliceblue;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    margin: auto;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.7);
+    font-family: "Roboto", sans-serif;
+}
+
+.details>p {
+    max-height: 150px;
+    overflow: auto;
+    font-size: larger;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.details>p::-webkit-scrollbar {
+    width: 0px;
+}
+
+.details>h2 {
+    font-weight: bolder;
+
+
+}
+
+.headings {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+
+}

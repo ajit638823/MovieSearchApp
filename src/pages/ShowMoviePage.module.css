@@ -1,0 +1,17 @@
+.loadingDiv {
+    margin-top: 10vh;
+}
+
+.details {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+
+}
+
+.page {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
