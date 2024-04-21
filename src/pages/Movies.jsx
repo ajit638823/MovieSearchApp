@@ -1,6 +1,8 @@
 import AppNav from "../components/AppNav";
 import MoviesSlider from "../components/MoviesSlider";
 import MovieRow from "../components/MovieRow";
+import { collection, getDoc } from "firebase/firestore";
+import 
 function Movies() {
   return (
     <div>

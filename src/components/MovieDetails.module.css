@@ -29,3 +29,42 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.addToList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    width: 150px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    gap: 10px;
+}
+
+.cptr {
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+}

@@ -5,7 +5,9 @@ import Open from "../components/Open";
 import Loader from "../components/Loader";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, provider } from "../firebase";
-import { useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+
+import { useEffect, useState } from "react";
 function LoginPage() {
   const [{ wait, sucess }, setWaiting] = useState({
     wait: false,
@@ -16,15 +18,27 @@ function LoginPage() {
     setWaiting((curr) => ({ ...curr, wait: true }));
     try {
       const res = await signInWithPopup(auth, provider);
-      console.log(res);
+
       setWaiting((curr) => ({ ...curr, sucess: true }));
     } catch (e) {
-      console.log(e);
+      //console.log(e);
     } finally {
       setWaiting((curr) => ({ ...curr, wait: false }));
-      console.log(waiting);
     }
   };
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setWaiting({ wait: false, sucess: true });
+      }
+      // else {
+      //   // User is signed out
+      //   // ...
+      // }
+    });
+  }, []);
+
   return (
     <div className={styles.loginPage}>
       <img src={BGI} className={styles.overlay} />

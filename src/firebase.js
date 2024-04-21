@@ -4,6 +4,7 @@ import { getAuth } from "firebase/auth";
 
 import { GoogleAuthProvider } from "firebase/auth";
 
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,6 +21,8 @@ const firebaseConfig = {
 // Now, `firebaseConfig` contains the Firebase configuration with values from Vite environment variables.
 
 // Initialize Firebase
+
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();
+export const db = getFirestore(app);
