@@ -7,14 +7,14 @@ import styles from "./MovieRow.module.css";
 function MovieRow({ heading, type, url }) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  console.log(url);
+  //console.log(url);
   const link = url ? url : requests[type];
   useEffect(() => {
     async function fetchMovies() {
       try {
         setIsLoading(true);
         const res = await axios.get(link);
-        console.log(res);
+        //console.log(res);
         setMovies(res.data.results);
       } catch (error) {
       } finally {

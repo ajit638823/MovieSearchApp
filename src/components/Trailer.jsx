@@ -4,18 +4,18 @@ import styles from "./Trailer.module.css";
 
 function Trailer({ videos }) {
   const [curr, setCurr] = useState(0);
-  console.log(videos);
+  //console.log(videos);
   // console.log("hello");
-  console.log(videos?.at(curr)?.key);
+  //console.log(videos?.at(curr)?.key);
   function handleNext() {
     if (curr >= videos.length - 1) return;
     setCurr((x) => x + 1);
-    console.log(curr);
+    //console.log(curr);
   }
   function handlePrev() {
     if (curr == 0) return;
     setCurr((x) => x - 1);
-    console.log(curr);
+    //console.log(curr);
   }
 
   return (

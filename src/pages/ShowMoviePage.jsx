@@ -9,12 +9,15 @@ import styles from "./ShowMoviePage.module.css";
 import Loader from "../components/Loader";
 import requests from "../request";
 import MovieRow from "../components/MovieRow";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase";
+
 const APIKEY = `1163e084f02e88f1718172d0524243e7`;
 
 function ShowMoviePage() {
   const { id, type } = useParams();
 
-  console.log(id, type);
+  //console.log(id, type);
 
   const [details, setDetails] = useState({});
   const [loading, setLoading] = useState(true);
@@ -29,7 +32,7 @@ function ShowMoviePage() {
         console.log(error);
       } finally {
         setLoading(false);
-        console.log(details);
+        //console.log(details);
       }
     }
     fetchDetails();
@@ -51,7 +54,7 @@ function ShowMoviePage() {
       </>
     );
   } else {
-    console.log("loading");
+    //console.log("loading");
     return (
       <div>
         <AppNav />

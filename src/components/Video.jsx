@@ -1,6 +1,6 @@
 import styles from "./Video.module.css";
 function Video({ id }) {
-  console.log(id);
+  //console.log(id);
   const embedlink = `http://www.youtube.com/embed/${id}?rel=0`;
   if (id) {
     return (
