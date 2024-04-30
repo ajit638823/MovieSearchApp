@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    gap: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding-top: 80px;
+}

@@ -1,0 +1,10 @@
+.info {
+    padding-left: 100px;
+}
+
+.about {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}

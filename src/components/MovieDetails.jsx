@@ -16,7 +16,6 @@ import Loader from "./Loader";
 import { onAuthStateChanged } from "firebase/auth";
 
 function MovieDetails({ details, type }) {
-  const [authDetect, setAuthDetect] = useState(false);
   const [fav, setFav] = useState([]);
   const [watched, setWatched] = useState([]);
   const [wish, setWish] = useState([]);

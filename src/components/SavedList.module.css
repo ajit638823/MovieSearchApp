@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    height: 50px;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.8s;
+    padding: 10px;
+}
+
+.item:hover {
+    background-color: lightblue;
+
+
+}
+
+
+.item>img {
+    width: 100px;
+    z-index: 1;
+    transition: all 0.8s;
+}
+
+
+.item>p {
+    font-size: x-large;
+    font-weight: bold;
+}
