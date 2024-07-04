@@ -1,6 +1,6 @@
 # Movie App
 
-<a src="https://searchmovies01.netlify.app/movies">Deployed Link</a><hr><br>
+<a href="https://searchmovies01.netlify.app/movies">Deployed Link</a><hr><br>
 
 ## Overview
 
