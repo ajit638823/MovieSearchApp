@@ -8,8 +8,7 @@ This is a web application built using React.js, JavaScript, CSS Modules for styl
 
 - User authentication with Google account
 - Search functionality for movies and TV shows
-- Favorite movie list for each user
-- Professional UI design with buttons, icons, and tables
+- User can save their movie lists in the firestore database
 
 ## Technologies Used
 
