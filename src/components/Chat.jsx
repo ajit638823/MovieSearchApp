@@ -52,7 +52,7 @@ function Chat() {
         <>
           <input
             type="text"
-            placeholder={"enter a Prompt"}
+            placeholder={"Enter Your Prompt"}
             className={styles.inp}
             onChange={(e) => setQuery(e.target.value)}
             value={query}
