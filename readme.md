@@ -1,5 +1,7 @@
 # Movie App
 
+<a src="https://searchmovies01.netlify.app/movies">Deployed Link</a><hr><br>
+
 ## Overview
 
 This is a web application built using React.js, JavaScript, CSS Modules for styling, and Firebase for backend services. The app allows users to search for movies and TV shows, save their favorite movies, and login/logout using their Google account.
