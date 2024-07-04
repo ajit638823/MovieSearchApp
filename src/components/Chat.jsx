@@ -10,8 +10,9 @@ function Chat() {
   const [disable, setDisable] = useState(false);
   const [genreId, setGenreId] = useState(null);
   const [loadingGenre, setLoadingGenre] = useState(false);
-  const geminiKey = `AIzaSyCYReKvDdclir8B0RzAyS1YVj0O7LuGCDI`;
-  const movieFetchUrl = `https://api.themoviedb.org/3/discover/movie?api_key=1163e084f02e88f1718172d0524243e7&with_genres=`;
+  const geminiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const tmdbKey = import.meta.env.VITE_TMDB_API_KEY;
+  const movieFetchUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${tmdbKey}&with_genres=`;
 
   async function fetchGenere() {
     setLoadingGenre(true);
