@@ -23,5 +23,6 @@ const requests = {
   mysteryMovies: `/discover/movie?api_key=${APIKEY}&language=en-US&page=1&with_genres=9648`,
 
   similarMovies: `/similar?api_key=${APIKEY}`,
+  prompt: `recommended a single movie genre code(id) from the given data(don't write anything else)id:28,Action id:12,Adventure id:16,Animation id:35,Comedy id:80,Crime id:99,Documentary id:18,Drama id:10751,Family id:14,Fantasy id:36,History id:27,Horror id:10402,Music id:9648,Mystery id:10749,Romance id:878,Science Fiction id:10770,TV Movie id:53,Thriller id:10752,War id:37,Western, on the basis of following text : `,
 };
 export default requests;

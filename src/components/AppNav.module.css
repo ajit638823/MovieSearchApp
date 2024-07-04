@@ -32,3 +32,9 @@
 .profile {
     cursor: pointer;
 }
+
+.search {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
