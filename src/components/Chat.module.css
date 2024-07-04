@@ -3,12 +3,16 @@
     top: 65px;
     z-index: 100;
     background-color: black;
-    height: 100px;
+    height: 200px;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
     display: flex;
+
+    justify-content: center;
     gap: 10px;
+    overflow: scroll;
+    padding: 20px;
 }
 
 .inp {
@@ -16,4 +20,8 @@
     height: 40px;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
+}
+
+.results {
+    margin-top: 20px;
 }
