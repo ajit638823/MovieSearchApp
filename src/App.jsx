@@ -23,7 +23,7 @@ function App() {
         <Route path="movies" element={<Movies />} />
         <Route path="tvShows" element={<TVShow />} />
         <Route path="userPage" element={<UserPage />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<LoginPage />} />
         <Route path="showMovie/:type/:id" element={<ShowMoviePage />} />
 
         <Route path="*" element={<p>Page not Found</p>} />

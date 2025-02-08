@@ -12,7 +12,7 @@ import MovieRow from "../components/MovieRow";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
 
-const APIKEY = `1163e084f02e88f1718172d0524243e7`;
+const APIKEY = `7992bbed9b4de38406055b0c5f4cc8a3`;
 
 function ShowMoviePage() {
   const { id, type } = useParams();

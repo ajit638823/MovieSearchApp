@@ -19,7 +19,7 @@ function AppNav() {
           <Search />
         </li>
 
-        <li>
+        {/* <li>
           <BsFillChatSquareTextFill
             size={25}
             onClick={() => setShowChat((curr) => !curr)}
@@ -27,7 +27,7 @@ function AppNav() {
           />
           AI
           {showChat && <Chat />}
-        </li>
+        </li> */}
       </li>
       <li>
         <div className={styles.mt}>

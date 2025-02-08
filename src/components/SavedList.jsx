@@ -6,7 +6,7 @@ import styles from "./SavedList.module.css";
 import { NavLink } from "react-router-dom";
 import { GiClown } from "react-icons/gi";
 
-const APIKEY = `1163e084f02e88f1718172d0524243e7`;
+const APIKEY = `7992bbed9b4de38406055b0c5f4cc8a3`;
 function SavedList({ list }) {
   const [details, setDetails] = useState([]);
   const [fetching, setFetching] = useState(true);
