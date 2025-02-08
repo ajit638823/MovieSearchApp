@@ -1,60 +1,36 @@
 # Movie App
 
-<a href="https://searchmovies01.netlify.app">Deployed Link</a><hr><br>
-
-## Overview
-
-This is a web application built using React.js, JavaScript, CSS Modules for styling, and Firebase for backend services. The app allows users to search for movies and TV shows, save their favorite movies, and login/logout using their Google account.
+A React.js web app for searching and saving movies & TV shows, with Firebase authentication.
 
 ## Features
+- Google login/logout
+- Movie & TV show search
+- Save favorite movies to Firestore
 
-- User authentication with Google account
-- Search functionality for movies and TV shows
-- User can save their movie lists in the firestore database
+## Tech Stack
+- React.js, JavaScript, CSS Modules
+- Firebase (Auth & Firestore)
 
-## Technologies Used
-
-- React.js
-- JavaScript
-- CSS Modules
-- Firebase
-
-## Installation
-
-1. Clone the repository:
-   git clone <repository-url>
-2. Install dependencies:
-   npm install
+## Setup
+1. Clone the repo:  
+   ```sh
+   git clone &lt;repository-url&gt;
+   ```
+2. Install dependencies:  
+   ```sh
+   npm install  
    npm install react-icons swiper
-3. Set up Firebase:
-
-- Create a Firebase project and set up authentication.
-- Replace the Firebase configuration in `firebase.js` with your own Firebase project configuration.
-
-## Usage
-
-1. Start the development server:
-2. Set up Firebase:
-
-- Create a Firebase project and set up authentication.
-- Replace the Firebase configuration in `firebase.js` with your own Firebase project configuration.
+   ```
+3. Configure Firebase:  
+   - Create a Firebase project & enable authentication.  
+   - Add your Firebase config to `firebase.js`.
 
 ## Usage
-
-1. Start the development server:
-   npm run dev
-2. Open the web app in your browser.
+```sh
+npm run dev
+```
 
 ## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature-name`.
-3. Commit your changes: `git commit -am 'Add some feature'`.
-4. Push to the branch: `git push origin feature-name`.
-5. Submit a pull request.
-
-<!-- ## License
-
-This project is licensed under the [MIT License](LICENSE). -->
+1. Fork & create a feature branch.  
+2. Commit & push changes.  
+3. Submit a pull request.
